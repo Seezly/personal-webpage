@@ -1,0 +1,46 @@
+.header {
+    background-color: $blue;
+    height: 100vh;
+
+    &__nav {
+        padding: 1.75em;
+        position: fixed;
+        width: 100%;
+        
+        &__nav-bar {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            li {
+
+                a {
+                    color: white;
+                    font-weight: $thin;
+
+                    &:hover {
+                        font-weight: $semiBold;
+                    }
+                }
+            }
+        }
+    }
+
+    &__name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+    }
+
+    &__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+}
