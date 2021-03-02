@@ -1,3 +1,87 @@
 &__about {
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "title title title title"
+        "photo2 about about about"
+        "dev dev dev photo1"
+        "touch touch touch touch"
+        "support support support support";
+    gap: 1.5em;
+
+    h2 {
+        grid-area: title;
+        margin-bottom: 1em;
+    }
+
+    h3, h4 {
+        margin-bottom: 0.5em;
+    }
+
+    &__p {
+
+        p {
+            text-align: justify;
+        }
+
+        &__lists{
+            display: flex;
+            justify-content: space-between;
+            margin: 1em 0;
+
+            &__list{
+                width: 30%;
+
+                &__tech {
+                    list-style: square;
+                    padding: 0.75em 3.5em;
+                }    
+            }
+
+        } 
+    }
+
+    &__p:nth-child(2) {
+        grid-area: about;
+
+        h3 {
+            text-align: left;
+        }
+    }
+
+    &__p:nth-child(3) {
+        grid-area: dev;
+
+        h3 {
+            text-align: right;
+        }
+    }
+
+    .--lg {
+        grid-area: photo1;
+    }
+
+    .--sm {
+        grid-area: photo2;
+    }
+
+    &__touch {
+        grid-area: touch;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__support {
+        grid-area: support;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        @import 'ko-fi';
+    }
 }

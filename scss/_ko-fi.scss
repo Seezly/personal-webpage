@@ -1,0 +1,16 @@
+.btn-container {
+
+    a.kofi-button {
+        padding: 1em 1.75em !important;
+        border-radius: 0.25em !important;
+        font-family: 'Poppins', 'Helvetica neue', Helvetica, monospace !important;
+        font-weight: $bold !important;
+        font-size: 18px !important;
+
+        &:hover {
+            background-color: $red !important;
+            color: white !important;
+            opacity: 1 !important;
+        }
+    }
+}

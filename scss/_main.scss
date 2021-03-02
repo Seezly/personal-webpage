@@ -1,3 +1,18 @@
 .container {
     background-color: $dGray;
+    padding: 3.75em;
+
+    a {
+        color: $blue;
+        font-weight: $bold;
+        text-decoration: solid underline $blue 0.25em;
+
+        &:hover {
+            color: $red;
+            text-decoration: solid underline $red 0.25em;
+        }
+    }
+
+    @import 'about';
+    @import 'portfolio';
 }

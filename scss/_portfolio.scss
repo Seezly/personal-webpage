@@ -1,3 +1,45 @@
 &__portfolio {
-    
+    padding: 3.75em 0;
+
+    h2 {
+        padding-bottom: 1em;
+    }
+
+    p {
+        width: 75%;
+        margin: 1.5em auto;
+        text-align: center;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__project {
+
+            h4 {
+                font-weight: $medium;
+            }
+
+            p {
+                font-weight: $light;
+            }
+
+            &__btn {
+                border: none;
+                padding: 1em;
+                border-radius: 0.25em;
+                background-color: $blue;
+                cursor: pointer;
+                font-weight: $black;
+                text-transform: uppercase;
+                color: white;
+
+                &:hover {
+                    background-color: $red;
+                }
+            }
+        }
+    }
 }

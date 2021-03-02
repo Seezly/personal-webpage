@@ -5,30 +5,32 @@ html {
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: $black;
+    font-weight: $bold;
     text-transform: uppercase;
     text-align: center;
 }
 
 h1 {
     font-size: 3em;
+    font-weight: $black;
     margin: 0;
 }
 
 h2 {
     font-size: 2em;
+    font-weight: $black;
 }
 
 h3 {
-    font-size: 1.75em;
-}
-
-h4 {
     font-size: 1.5em;
 }
 
-h5 {
+h4 {
     font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1em;
 }
 
 h6 {
@@ -48,10 +50,11 @@ ul {
 
 .yellow {
     color: $sun;
+    font-weight: $black;
 }
 
 .italic {
-    font-weight: $thin;
+    font-weight: $light;
     font-style: italic;
 }
 
@@ -61,4 +64,9 @@ ul {
 
 .nulled {
     text-decoration: line-through;
+}
+
+.small {
+    font-size: 0.75em;
+    font-weight: $semiBold;
 }
