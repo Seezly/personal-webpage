@@ -209,7 +209,7 @@ body {
   font-size: 18px !important;
 }
 .container__about__support .btn-container a.kofi-button:hover {
-  background-color: #c33c54 !important;
+  transform: scale(1.1);
   color: white !important;
   opacity: 1 !important;
 }

@@ -9,7 +9,7 @@
         font-size: 18px !important;
 
         &:hover {
-            background-color: $red !important;
+            transform: scale(1.1);
             color: white !important;
             opacity: 1 !important;
         }
