@@ -13,6 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            display: none;
 
             &__status {
                 text-align: center;
@@ -210,20 +211,21 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                flex-direction: column;
 
                 &__project {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     flex-direction: column;
-                    width: 30%;
+                    width: 50%;
                     height: 28em;
                     padding-top: 1.5em;
 
                     &__img {
                         margin-bottom: 1em;
-                        width: 92%;
-                        height: 51%;
+                        width: calc(1425px * 0.25);
+                        height: calc(975px * 0.25);
                         overflow: hidden;
                         position: relative;
 
@@ -333,6 +335,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            display: none;
 
             &__status {
                 text-align: center;
@@ -542,14 +545,14 @@
                     justify-content: space-between;
                     align-items: center;
                     flex-direction: column;
-                    width: 30%;
+                    width: 50%;
                     height: 28em;
                     padding-top: 1.5em;
 
                     &__img {
                         margin-bottom: 1em;
-                        width: 92%;
-                        height: 51%;
+                        width: calc(1425px * 0.25);
+                        height: calc(975px * 0.25);
                         overflow: hidden;
                         position: relative;
 
