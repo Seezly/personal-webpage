@@ -1,7 +1,9 @@
-import job from "./job";
-import colors from "./colors";
+import colors from "./colors.js";
+import job from "./job.js";
+import quotes from './quotes.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-	job(true);
 	colors();
+	job(true);
+	quotes();
 });

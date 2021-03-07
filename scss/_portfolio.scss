@@ -1,5 +1,5 @@
 &__portfolio {
-    padding: 3.75em 0;
+    padding: 3.75em 0 0 0;
 
     h2 {
         padding-bottom: 1em;
@@ -17,6 +17,45 @@
         align-items: center;
 
         &__project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 30%;
+            height: 28em;
+            padding-top: 1.5em;
+
+            &__img {
+                margin-bottom: 1em;
+                width: 92%;
+                height: 51%;
+                overflow: hidden;
+                position: relative;
+
+                &__screenshot {
+                    position: relative;
+                    transform: scale(0.25);
+                    transform-origin: 0 0;
+                    width: 1440px;
+                    height: 900px;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                    }
+
+                    iframe {
+                        width: 1440px;
+                        height: 900px;
+                        display: block;
+                    }
+                }
+            }
 
             h4 {
                 font-weight: $medium;
@@ -24,6 +63,9 @@
 
             p {
                 font-weight: $light;
+                text-align: center;
+                width: 100%;
+                height: 22%;
             }
 
             &__btn {

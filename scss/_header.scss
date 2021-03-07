@@ -7,12 +7,21 @@
         position: fixed;
         width: 100%;
         background-color: rgba($blue, 0.75);
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__status {
+            text-align: center;
+            width: 25%;
+        }
         
         &__nav-bar {
             width: 50%;
             display: flex;
             justify-content: space-between;
-            margin: 0 auto;
+            margin: 0 auto 0 0;
 
             li {
 
@@ -25,6 +34,12 @@
                     }
                 }
             }
+        }
+
+        &__quote {
+            text-align: right;
+            width: 25%;
+            font-size: 0.65em;
         }
     }
 
