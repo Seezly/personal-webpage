@@ -16,18 +16,22 @@
         
         a {
             color: white;
+            @include transitions(.5s);
 
             &:hover {
                 color: $malachite;
+                @include transitions(.5s);
             }
         }
     }
 
     &__copy {
         a {
+            @include transitions(.5s);
 
             &:hover {
                 color: $malachite;
+                @include transitions(.5s);
             }
         }
     }

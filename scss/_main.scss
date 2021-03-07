@@ -6,10 +6,12 @@
         color: $blue;
         font-weight: $bold;
         text-decoration: solid underline $blue 0.25em;
+        @include transitions(.5s);
 
         &:hover {
             color: $red;
             text-decoration: solid underline $red 0.25em;
+            @include transitions(.5s);
         }
     }
 

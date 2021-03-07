@@ -77,9 +77,11 @@
                 font-weight: $black;
                 text-transform: uppercase;
                 color: white;
+                @include transitions(.5s);
 
                 &:hover {
                     background-color: $red;
+                    @include transitions(.5s);
                 }
             }
         }

@@ -99,9 +99,17 @@ body {
 .header__nav__nav-bar li a {
   color: white;
   font-weight: 100;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .header__nav__nav-bar li a:hover {
   font-weight: 600;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .header__nav__quote {
   text-align: right;
@@ -140,10 +148,18 @@ body {
   color: #4044fd;
   font-weight: 700;
   text-decoration: solid underline #4044fd 0.25em;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .container a:hover {
   color: #c33c54;
   text-decoration: solid underline #c33c54 0.25em;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .container__about {
   display: grid;
@@ -215,11 +231,19 @@ body {
   font-family: "Poppins", "Helvetica neue", Helvetica, monospace !important;
   font-weight: 700 !important;
   font-size: 18px !important;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .container__about__support .btn-container a.kofi-button:hover {
   transform: scale(1.1);
   color: white !important;
   opacity: 1 !important;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .container__portfolio {
   padding: 3.75em 0 0 0;
@@ -292,9 +316,17 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   color: white;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .container__portfolio .projects__project__btn:hover {
   background-color: #c33c54;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 .footer {
@@ -315,12 +347,30 @@ body {
 }
 .footer__social a {
   color: white;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .footer__social a:hover {
   color: #53dd6c;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.footer__copy a {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .footer__copy a:hover {
   color: #53dd6c;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,11 +7,13 @@
         font-family: 'Poppins', 'Helvetica neue', Helvetica, monospace !important;
         font-weight: $bold !important;
         font-size: 18px !important;
+        @include transitions(.5s);
 
         &:hover {
             transform: scale(1.1);
             color: white !important;
             opacity: 1 !important;
+            @include transitions(.5s);
         }
     }
 }

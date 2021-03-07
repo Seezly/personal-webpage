@@ -29,8 +29,12 @@
                     color: white;
                     font-weight: $thin;
 
+                    @include transitions(.5s);
+
                     &:hover {
                         font-weight: $semiBold;
+
+                        @include transitions(.5s);
                     }
                 }
             }
