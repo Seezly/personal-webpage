@@ -473,14 +473,14 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") no-repeat;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") 0 -10vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") no-repeat;
+    background: url("../assets/images/pexels-pixabay-414628.webp") 0 -7.5vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
@@ -721,14 +721,14 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") no-repeat;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") 0 -10vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") no-repeat;
+    background: url("../assets/images/pexels-pixabay-414628.webp") 0 -7.5vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
@@ -969,14 +969,14 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") no-repeat;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") 0 -10vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") no-repeat;
+    background: url("../assets/images/pexels-pixabay-414628.webp") 0 -7.5vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
@@ -1217,14 +1217,14 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") no-repeat;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") 0 -10vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") no-repeat;
+    background: url("../assets/images/pexels-pixabay-414628.webp") 0 -7.5vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
