@@ -80,23 +80,18 @@
         }
 
         &__about {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                "title title title title"
-                "photo2 about about about"
-                "dev dev dev photo1"
-                "touch touch touch touch"
-                "support support support support";
-            gap: 1.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             h2 {
                 grid-area: title;
                 margin-bottom: 1em;
             }
 
-            h3, h4 {
-                margin-bottom: 0.5em;
+            h3,
+            h4 {
+                margin: 0.5em 0;
             }
 
             &__p {
@@ -105,21 +100,20 @@
                     text-align: justify;
                 }
 
-                &__lists{
-                    display: flex;
-                    justify-content: space-between;
+                &__lists {
+                    display: block;
                     margin: 1em 0;
 
-                    &__list{
-                        width: 30%;
+                    &__list {
+                        width: 100%;
 
                         &__tech {
                             list-style: square;
                             padding: 0.75em 3.5em;
-                        }    
+                        }
                     }
 
-                } 
+                }
             }
 
             &__p:nth-child(2) {
@@ -140,26 +134,30 @@
 
             .--lg {
                 grid-area: photo1;
-                background: url('../assets/images/pexels-christina-morillo-1181244.webp') -18.75vw;
+                background: url('../assets/images/pexels-christina-morillo-1181244.webp') no-repeat;
                 background-size: cover;
+                width: 100%;
+                height: 25vh;
             }
 
             .--sm {
                 grid-area: photo2;
-                background: url('../assets/images/pexels-pixabay-414628.webp') -5vw;
+                background: url('../assets/images/pexels-pixabay-414628.webp') no-repeat;
                 background-size: cover;
+                width: 100%;
+                height: 25vh;
             }
 
             &__touch {
                 grid-area: touch;
-                width: 75%;
+                width: 100%;
                 margin: auto;
                 text-align: center;
             }
 
             &__support {
                 grid-area: support;
-                width: 75%;
+                width: 100%;
                 margin: auto;
                 text-align: center;
 
@@ -175,7 +173,7 @@
                         border-radius: 0.25em !important;
                         font-family: 'Poppins', 'Helvetica neue', Helvetica, monospace !important;
                         font-weight: $bold !important;
-                        font-size: 18px !important;
+                        font-size: 1em !important;
 
                         &:hover {
                             transform: scale(1.1);
@@ -289,7 +287,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 25%;
+            width: 37.5%;
             margin: 1em;
             font-size: 2em;
             
@@ -382,23 +380,18 @@
         }
 
         &__about {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                "title title title title"
-                "photo2 about about about"
-                "dev dev dev photo1"
-                "touch touch touch touch"
-                "support support support support";
-            gap: 1.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             h2 {
                 grid-area: title;
                 margin-bottom: 1em;
             }
 
-            h3, h4 {
-                margin-bottom: 0.5em;
+            h3,
+            h4 {
+                margin: 0.5em 0;
             }
 
             &__p {
@@ -407,20 +400,20 @@
                     text-align: justify;
                 }
 
-                &__lists{
-                    display: flex;
-                    justify-content: space-between;
+                &__lists {
+                    display: block;
                     margin: 1em 0;
 
-                    &__list{
-                        width: 30%;
+                    &__list {
+                        width: 100%;
 
                         &__tech {
                             list-style: square;
                             padding: 0.75em 3.5em;
-                        }    
+                        }
                     }
-                } 
+
+                }
             }
 
             &__p:nth-child(2) {
@@ -441,26 +434,30 @@
 
             .--lg {
                 grid-area: photo1;
-                background: url('../assets/images/pexels-christina-morillo-1181244.webp') -18.75vw;
+                background: url('../assets/images/pexels-christina-morillo-1181244.webp') no-repeat;
                 background-size: cover;
+                width: 100%;
+                height: 25vh;
             }
 
             .--sm {
                 grid-area: photo2;
-                background: url('../assets/images/pexels-pixabay-414628.webp') -5vw;
+                background: url('../assets/images/pexels-pixabay-414628.webp') no-repeat;
                 background-size: cover;
+                width: 100%;
+                height: 25vh;
             }
 
             &__touch {
                 grid-area: touch;
-                width: 75%;
+                width: 100%;
                 margin: auto;
                 text-align: center;
             }
 
             &__support {
                 grid-area: support;
-                width: 75%;
+                width: 100%;
                 margin: auto;
                 text-align: center;
 
@@ -476,7 +473,7 @@
                         border-radius: 0.25em !important;
                         font-family: 'Poppins', 'Helvetica neue', Helvetica, monospace !important;
                         font-weight: $bold !important;
-                        font-size: 18px !important;
+                        font-size: 1em !important;
 
                         &:hover {
                             transform: scale(1.1);
@@ -505,6 +502,7 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                flex-direction: column;
 
                 &__project {
                     display: flex;
@@ -566,6 +564,12 @@
                         font-weight: $black;
                         text-transform: uppercase;
                         color: white;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: white;
+                            text-decoration: none;
+                        }
                     }
                 }
             }
@@ -583,7 +587,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 25%;
+            width: 32.75%;
             margin: 1em;
             font-size: 2em;
             

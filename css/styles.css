@@ -373,6 +373,7 @@ body {
 @media screen and (max-width: 600px) {
   .header {
     height: 100vh;
+    padding: 2.5em;
   }
   .header__nav {
     padding: 1.75em;
@@ -411,19 +412,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
-    height: 100%;
-    float: left;
+    height: 50%;
     line-height: 2.5em;
   }
   .header__about {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 100%;
-    float: right;
-    padding: 0 3.25em 0 0;
+    height: 50%;
   }
   .header__about h3 {
     font-weight: 500;
@@ -438,28 +434,26 @@ body {
     font-weight: 700;
   }
   .container__about {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "title title title title" "photo2 about about about" "dev dev dev photo1" "touch touch touch touch" "support support support support";
-    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .container__about h2 {
     grid-area: title;
     margin-bottom: 1em;
   }
   .container__about h3, .container__about h4 {
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
   }
   .container__about__p p {
     text-align: justify;
   }
   .container__about__p__lists {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin: 1em 0;
   }
   .container__about__p__lists__list {
-    width: 30%;
+    width: 100%;
   }
   .container__about__p__lists__list__tech {
     list-style: square;
@@ -479,23 +473,27 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") -18.75vw;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") -5vw;
+    background: url("../assets/images/pexels-pixabay-414628.webp") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 25vh;
   }
   .container__about__touch {
     grid-area: touch;
-    width: 75%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
   .container__about__support {
     grid-area: support;
-    width: 75%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
@@ -510,7 +508,7 @@ body {
     border-radius: 0.25em !important;
     font-family: "Poppins", "Helvetica neue", Helvetica, monospace !important;
     font-weight: 700 !important;
-    font-size: 18px !important;
+    font-size: 1em !important;
   }
   .container__about__support .btn-container a.kofi-button:hover {
     transform: scale(1.1);
@@ -524,7 +522,7 @@ body {
     padding-bottom: 1em;
   }
   .container__portfolio p {
-    width: 75%;
+    width: 100%;
     margin: 1.5em auto;
     text-align: center;
   }
@@ -539,7 +537,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
     height: 28em;
     padding-top: 1.5em;
   }
@@ -606,7 +604,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 25%;
+    width: 75%;
     margin: 1em;
     font-size: 2em;
   }
@@ -683,28 +681,27 @@ body {
     font-weight: 700;
   }
   .container__about {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "title title title title" "photo2 about about about" "dev dev dev photo1" "touch touch touch touch" "support support support support";
-    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .container__about h2 {
     grid-area: title;
     margin-bottom: 1em;
   }
-  .container__about h3, .container__about h4 {
-    margin-bottom: 0.5em;
+  .container__about h3,
+.container__about h4 {
+    margin: 0.5em 0;
   }
   .container__about__p p {
     text-align: justify;
   }
   .container__about__p__lists {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin: 1em 0;
   }
   .container__about__p__lists__list {
-    width: 30%;
+    width: 100%;
   }
   .container__about__p__lists__list__tech {
     list-style: square;
@@ -724,23 +721,27 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") -18.75vw;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") -5vw;
+    background: url("../assets/images/pexels-pixabay-414628.webp") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 25vh;
   }
   .container__about__touch {
     grid-area: touch;
-    width: 75%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
   .container__about__support {
     grid-area: support;
-    width: 75%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
@@ -755,7 +756,7 @@ body {
     border-radius: 0.25em !important;
     font-family: "Poppins", "Helvetica neue", Helvetica, monospace !important;
     font-weight: 700 !important;
-    font-size: 18px !important;
+    font-size: 1em !important;
   }
   .container__about__support .btn-container a.kofi-button:hover {
     transform: scale(1.1);
@@ -769,7 +770,7 @@ body {
     padding-bottom: 1em;
   }
   .container__portfolio p {
-    width: 75%;
+    width: 100%;
     margin: 1.5em auto;
     text-align: center;
   }
@@ -851,7 +852,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 25%;
+    width: 50%;
     margin: 1em;
     font-size: 2em;
   }
@@ -928,28 +929,27 @@ body {
     font-weight: 700;
   }
   .container__about {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "title title title title" "photo2 about about about" "dev dev dev photo1" "touch touch touch touch" "support support support support";
-    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .container__about h2 {
     grid-area: title;
     margin-bottom: 1em;
   }
-  .container__about h3, .container__about h4 {
-    margin-bottom: 0.5em;
+  .container__about h3,
+.container__about h4 {
+    margin: 0.5em 0;
   }
   .container__about__p p {
     text-align: justify;
   }
   .container__about__p__lists {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin: 1em 0;
   }
   .container__about__p__lists__list {
-    width: 30%;
+    width: 100%;
   }
   .container__about__p__lists__list__tech {
     list-style: square;
@@ -969,23 +969,27 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") -18.75vw;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") -5vw;
+    background: url("../assets/images/pexels-pixabay-414628.webp") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 25vh;
   }
   .container__about__touch {
     grid-area: touch;
-    width: 75%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
   .container__about__support {
     grid-area: support;
-    width: 75%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
@@ -1000,7 +1004,7 @@ body {
     border-radius: 0.25em !important;
     font-family: "Poppins", "Helvetica neue", Helvetica, monospace !important;
     font-weight: 700 !important;
-    font-size: 18px !important;
+    font-size: 1em !important;
   }
   .container__about__support .btn-container a.kofi-button:hover {
     transform: scale(1.1);
@@ -1096,7 +1100,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 25%;
+    width: 37.5%;
     margin: 1em;
     font-size: 2em;
   }
@@ -1173,28 +1177,27 @@ body {
     font-weight: 700;
   }
   .container__about {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "title title title title" "photo2 about about about" "dev dev dev photo1" "touch touch touch touch" "support support support support";
-    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .container__about h2 {
     grid-area: title;
     margin-bottom: 1em;
   }
-  .container__about h3, .container__about h4 {
-    margin-bottom: 0.5em;
+  .container__about h3,
+.container__about h4 {
+    margin: 0.5em 0;
   }
   .container__about__p p {
     text-align: justify;
   }
   .container__about__p__lists {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin: 1em 0;
   }
   .container__about__p__lists__list {
-    width: 30%;
+    width: 100%;
   }
   .container__about__p__lists__list__tech {
     list-style: square;
@@ -1214,23 +1217,27 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") -18.75vw;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") -5vw;
+    background: url("../assets/images/pexels-pixabay-414628.webp") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 25vh;
   }
   .container__about__touch {
     grid-area: touch;
-    width: 75%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
   .container__about__support {
     grid-area: support;
-    width: 75%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
@@ -1245,7 +1252,7 @@ body {
     border-radius: 0.25em !important;
     font-family: "Poppins", "Helvetica neue", Helvetica, monospace !important;
     font-weight: 700 !important;
-    font-size: 18px !important;
+    font-size: 1em !important;
   }
   .container__about__support .btn-container a.kofi-button:hover {
     transform: scale(1.1);
@@ -1267,6 +1274,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
   }
   .container__portfolio .projects__project {
     display: flex;
@@ -1322,6 +1330,11 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
+  }
+  .container__portfolio .projects__project__btn:hover {
+    color: white;
+    text-decoration: none;
   }
 
   .footer {
@@ -1335,7 +1348,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 25%;
+    width: 32.75%;
     margin: 1em;
     font-size: 2em;
   }

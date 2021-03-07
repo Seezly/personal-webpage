@@ -2,6 +2,7 @@
 @media screen and (max-width: 600px) {
     .header {
         height: 100vh;
+        padding: 2.5em;
 
         &__nav {
             padding: 1.75em;
@@ -49,9 +50,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 50%;
-            height: 100%;
-            float: left;
+            height: 50%;
             line-height: 2.5em;
         }
 
@@ -59,10 +58,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 50%;
-            height: 100%;
-            float: right;
-            padding: 0 3.25em 0 0;
+            height: 50%;
 
             h3 {
                 font-weight: $medium;
@@ -80,15 +76,9 @@
         }
 
         &__about {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                "title title title title"
-                "photo2 about about about"
-                "dev dev dev photo1"
-                "touch touch touch touch"
-                "support support support support";
-            gap: 1.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             h2 {
                 grid-area: title;
@@ -96,7 +86,7 @@
             }
 
             h3, h4 {
-                margin-bottom: 0.5em;
+                margin: 0.5em 0;
             }
 
             &__p {
@@ -106,12 +96,11 @@
                 }
 
                 &__lists{
-                    display: flex;
-                    justify-content: space-between;
+                    display: block;
                     margin: 1em 0;
 
                     &__list{
-                        width: 30%;
+                        width: 100%;
 
                         &__tech {
                             list-style: square;
@@ -140,26 +129,30 @@
 
             .--lg {
                 grid-area: photo1;
-                background: url('../assets/images/pexels-christina-morillo-1181244.webp') -18.75vw;
+                background: url('../assets/images/pexels-christina-morillo-1181244.webp') no-repeat;
                 background-size: cover;
+                width: 100%;
+                height: 25vh;
             }
 
             .--sm {
                 grid-area: photo2;
-                background: url('../assets/images/pexels-pixabay-414628.webp') -5vw;
+                background: url('../assets/images/pexels-pixabay-414628.webp') no-repeat;
                 background-size: cover;
+                width: 100%;
+                height: 25vh;
             }
 
             &__touch {
                 grid-area: touch;
-                width: 75%;
+                width: 100%;
                 margin: auto;
                 text-align: center;
             }
 
             &__support {
                 grid-area: support;
-                width: 75%;
+                width: 100%;
                 margin: auto;
                 text-align: center;
 
@@ -175,7 +168,7 @@
                         border-radius: 0.25em !important;
                         font-family: 'Poppins', 'Helvetica neue', Helvetica, monospace !important;
                         font-weight: $bold !important;
-                        font-size: 18px !important;
+                        font-size: 1em !important;
 
                         &:hover {
                             transform: scale(1.1);
@@ -195,7 +188,7 @@
             }
 
             p {
-                width: 75%;
+                width: 100%;
                 margin: 1.5em auto;
                 text-align: center;
             }
@@ -211,7 +204,7 @@
                     justify-content: space-between;
                     align-items: center;
                     flex-direction: column;
-                    width: 75%;
+                    width: 100%;
                     height: 28em;
                     padding-top: 1.5em;
 
@@ -289,7 +282,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 25%;
+            width: 75%;
             margin: 1em;
             font-size: 2em;
             
@@ -382,23 +375,18 @@
         }
 
         &__about {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                "title title title title"
-                "photo2 about about about"
-                "dev dev dev photo1"
-                "touch touch touch touch"
-                "support support support support";
-            gap: 1.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             h2 {
                 grid-area: title;
                 margin-bottom: 1em;
             }
 
-            h3, h4 {
-                margin-bottom: 0.5em;
+            h3,
+            h4 {
+                margin: 0.5em 0;
             }
 
             &__p {
@@ -407,20 +395,20 @@
                     text-align: justify;
                 }
 
-                &__lists{
-                    display: flex;
-                    justify-content: space-between;
+                &__lists {
+                    display: block;
                     margin: 1em 0;
 
-                    &__list{
-                        width: 30%;
+                    &__list {
+                        width: 100%;
 
                         &__tech {
                             list-style: square;
                             padding: 0.75em 3.5em;
-                        }    
+                        }
                     }
-                } 
+
+                }
             }
 
             &__p:nth-child(2) {
@@ -441,26 +429,30 @@
 
             .--lg {
                 grid-area: photo1;
-                background: url('../assets/images/pexels-christina-morillo-1181244.webp') -18.75vw;
+                background: url('../assets/images/pexels-christina-morillo-1181244.webp') no-repeat;
                 background-size: cover;
+                width: 100%;
+                height: 25vh;
             }
 
             .--sm {
                 grid-area: photo2;
-                background: url('../assets/images/pexels-pixabay-414628.webp') -5vw;
+                background: url('../assets/images/pexels-pixabay-414628.webp') no-repeat;
                 background-size: cover;
+                width: 100%;
+                height: 25vh;
             }
 
             &__touch {
                 grid-area: touch;
-                width: 75%;
+                width: 100%;
                 margin: auto;
                 text-align: center;
             }
 
             &__support {
                 grid-area: support;
-                width: 75%;
+                width: 100%;
                 margin: auto;
                 text-align: center;
 
@@ -476,7 +468,7 @@
                         border-radius: 0.25em !important;
                         font-family: 'Poppins', 'Helvetica neue', Helvetica, monospace !important;
                         font-weight: $bold !important;
-                        font-size: 18px !important;
+                        font-size: 1em !important;
 
                         &:hover {
                             transform: scale(1.1);
@@ -496,7 +488,7 @@
             }
 
             p {
-                width: 75%;
+                width: 100%;
                 margin: 1.5em auto;
                 text-align: center;
             }
@@ -590,7 +582,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 25%;
+            width: 50%;
             margin: 1em;
             font-size: 2em;
             
