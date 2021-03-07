@@ -4,11 +4,9 @@
 
     a {
         font-weight: $bold;
-        text-decoration: solid underline $blue 0.25em;
         @include transitions(.5s);
 
         &:hover {
-            text-decoration: solid underline $red 0.25em;
             @include transitions(.5s);
         }
     }

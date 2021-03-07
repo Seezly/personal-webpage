@@ -140,10 +140,14 @@
 
             .--lg {
                 grid-area: photo1;
+                background: url('../assets/images/pexels-christina-morillo-1181244.webp') -18.75vw;
+                background-size: cover;
             }
 
             .--sm {
                 grid-area: photo2;
+                background: url('../assets/images/pexels-pixabay-414628.webp') -5vw;
+                background-size: cover;
             }
 
             &__touch {
@@ -437,10 +441,14 @@
 
             .--lg {
                 grid-area: photo1;
+                background: url('../assets/images/pexels-christina-morillo-1181244.webp') -18.75vw;
+                background-size: cover;
             }
 
             .--sm {
                 grid-area: photo2;
+                background: url('../assets/images/pexels-pixabay-414628.webp') -5vw;
+                background-size: cover;
             }
 
             &__touch {
