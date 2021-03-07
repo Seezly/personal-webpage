@@ -14,17 +14,17 @@
 
     <body>
 
-        <header class="header">
+        <header class="header" id="header">
 
             <nav class="header__nav">
 
                 <span class="header__nav__status"></span>
 
                 <ul class="header__nav__nav-bar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
 
                 <span class="header__nav__quote"><pre></pre></span>
@@ -56,7 +56,7 @@
         
         <main class="container">
 
-            <section class="container__about">
+            <section class="container__about" id="about">
 
                 <h2>About me</h2>
 
@@ -139,7 +139,7 @@
 
             </section>
 
-            <section class="container__portfolio">
+            <section class="container__portfolio" id="portfolio">
 
                 <h2>Portfolio</h2>
 
@@ -159,7 +159,7 @@
                         <div class="projects__project__img" title="Article preview project">
 
                             <div class="projects__project__img__screenshot">
-                                <iframe src="https://seezly-article-preview.netlify.app/" frameborder="0"></iframe>
+                                <iframe src="https://seezly-article-preview.netlify.app" frameborder="0"></iframe>
                             </div>
 
                         </div>
@@ -167,7 +167,7 @@
                         <h4>Article preview</h4>
                         <p>Article preview component made in HTML, CSS using SCSS as pre-processor and vanilla JavaScript.</p>
 
-                        <button class="projects__project__btn">Go to project</button>
+                        <a class="projects__project__btn" href="https://seezly-article-preview.netlify.app">Go to project</a>
 
                     </div>
 
@@ -184,7 +184,7 @@
                         <h4>Clipboard landing page</h4>
                         <p>Clipboard landing page made in HTML, CSS using SCSS as pre-processor.</p>
 
-                        <button class="projects__project__btn">Go to project</button>
+                        <a class="projects__project__btn" href="https://seezly-clipboard-landing-page.netlify.app">Go to project</a>
 
                     </div>
 
@@ -202,7 +202,7 @@
                         <h4>Testimonial slider</h4>
                         <p>Testimonial slider component made in HTML, CSS using SCSS as pre-processor and vanilla JavaScript.</p>
 
-                        <button class="projects__project__btn">Go to project</button>
+                        <a class="projects__project__btn" href="https://seezly-coding-bootcamp-testimonial-slider.netlify.app">Go to project</a>
 
                     </div>
 

@@ -316,12 +316,15 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   color: white;
+  text-decoration: none;
   transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
 .container__portfolio .projects__project__btn:hover {
+  color: white;
+  text-decoration: none;
   background-color: #c33c54;
   transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -597,8 +600,11 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
   }
   .container__portfolio .projects__project__btn:hover {
+    color: white;
+    text-decoration: none;
     background-color: #c33c54;
   }
 
@@ -852,8 +858,11 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
   }
   .container__portfolio .projects__project__btn:hover {
+    color: white;
+    text-decoration: none;
     background-color: #c33c54;
   }
 
@@ -1107,8 +1116,11 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
   }
   .container__portfolio .projects__project__btn:hover {
+    color: white;
+    text-decoration: none;
     background-color: #c33c54;
   }
 

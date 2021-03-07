@@ -3,7 +3,7 @@ const colors = () => {
 	nav = document.getElementsByClassName('header__nav')[0],
 	span = document.querySelectorAll('span.yellow'),
 	links = document.querySelectorAll('main a'),
-	buttons = document.querySelectorAll('button.projects__project__btn'),
+	buttons = document.querySelectorAll('a.projects__project__btn'),
 	kofi = document.querySelector('.kofi-button'),
 	footer = document.getElementsByTagName('footer')[0],
 	footerLinks = document.querySelectorAll('.footer__social a'),
@@ -66,12 +66,18 @@ const colors = () => {
 
     buttons.forEach(el => {
         el.style.backgroundColor = blue;
+        el.style.color = 'white';
+        el.style.textDecoration = 'none';
 
         el.addEventListener('mouseover', () => {
             el.style.backgroundColor = red;
+            el.style.color = 'white';
+            el.style.textDecoration = 'none';
         });
         el.addEventListener('mouseout', () => {
             el.style.backgroundColor = blue;
+            el.style.color = 'white';
+            el.style.textDecoration = 'none';
         });
     });
 

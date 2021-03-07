@@ -1,12 +1,10 @@
 .header {
-    background-color: $blue;
     height: 100vh;
 
     &__nav {
         padding: 1.75em;
         position: fixed;
         width: 100%;
-        background-color: rgba($blue, 0.75);
         z-index: 999;
         display: flex;
         justify-content: center;
