@@ -82,6 +82,7 @@ const colors = () => {
     });
 
     kofi.style.backgroundColor = blue;
+    kofi.style.textDecoration = 'none';
 
     footer.style.backgroundColor = blue;
 
