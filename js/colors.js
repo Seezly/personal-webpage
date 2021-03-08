@@ -83,6 +83,7 @@ const colors = () => {
 
     kofi.style.backgroundColor = blue;
     kofi.style.textDecoration = 'none';
+    kofi.setAttribute('rel', 'noopener noreferrer');
 
     footer.style.backgroundColor = blue;
 
