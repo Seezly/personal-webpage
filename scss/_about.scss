@@ -49,7 +49,7 @@
         }
     }
 
-    &__p:nth-child(3) {
+    &__p:nth-child(4) {
         grid-area: dev;
 
         h3 {
@@ -59,13 +59,13 @@
 
     .--lg {
         grid-area: photo1;
-        background: url('../assets/images/pexels-christina-morillo-1181244.webp') -18.75vw;
+        background: url('../assets/images/pexels-christina-morillo-1181244.webp') -18.75vw no-repeat;
         background-size: cover;
     }
 
     .--sm {
         grid-area: photo2;
-        background: url('../assets/images/pexels-pixabay-414628.webp') -5vw;
+        background: url('../assets/images/pexels-pixabay-414628.webp') -5vw no-repeat;
         background-size: cover;
     }
 

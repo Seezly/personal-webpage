@@ -189,20 +189,20 @@ body {
 .container__about__p:nth-child(2) h3 {
   text-align: left;
 }
-.container__about__p:nth-child(3) {
+.container__about__p:nth-child(4) {
   grid-area: dev;
 }
-.container__about__p:nth-child(3) h3 {
+.container__about__p:nth-child(4) h3 {
   text-align: right;
 }
 .container__about .--lg {
   grid-area: photo1;
-  background: url("../assets/images/pexels-christina-morillo-1181244.webp") -18.75vw;
+  background: url("../assets/images/pexels-christina-morillo-1181244.webp") -18.75vw no-repeat;
   background-size: cover;
 }
 .container__about .--sm {
   grid-area: photo2;
-  background: url("../assets/images/pexels-pixabay-414628.webp") -5vw;
+  background: url("../assets/images/pexels-pixabay-414628.webp") -5vw no-repeat;
   background-size: cover;
 }
 .container__about__touch {
@@ -972,14 +972,14 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") 0 -10vh no-repeat;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") 0 -12vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") 0 -7.5vh no-repeat;
+    background: url("../assets/images/pexels-pixabay-414628.webp") 0 -9.5vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
@@ -1220,14 +1220,14 @@ body {
   }
   .container__about .--lg {
     grid-area: photo1;
-    background: url("../assets/images/pexels-christina-morillo-1181244.webp") 0 -10vh no-repeat;
+    background: url("../assets/images/pexels-christina-morillo-1181244.webp") 0 -15vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
   }
   .container__about .--sm {
     grid-area: photo2;
-    background: url("../assets/images/pexels-pixabay-414628.webp") 0 -7.5vh no-repeat;
+    background: url("../assets/images/pexels-pixabay-414628.webp") 0 -17.5vh no-repeat;
     background-size: cover;
     width: 100%;
     height: 25vh;
