@@ -270,8 +270,8 @@ body {
 }
 .container__portfolio .projects__project__img {
   margin-bottom: 1em;
-  width: 92%;
-  height: 51%;
+  width: calc(1324.8px * 0.25);
+  height: calc(459px * 0.25);
   overflow: hidden;
   position: relative;
 }
