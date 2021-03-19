@@ -270,8 +270,8 @@ body {
 }
 .container__portfolio .projects__project__img {
   margin-bottom: 1em;
-  width: calc(1324.8px * 0.25);
-  height: calc(459px * 0.25);
+  width: 92%;
+  height: 55%;
   overflow: hidden;
   position: relative;
 }
@@ -279,8 +279,8 @@ body {
   position: relative;
   transform: scale(0.25);
   transform-origin: 0 0;
-  width: 1440px;
-  height: 900px;
+  width: calc(1440px * 0.25);
+  height: calc(900px * 0.25);
 }
 .container__portfolio .projects__project__img__screenshot:after {
   content: "";
