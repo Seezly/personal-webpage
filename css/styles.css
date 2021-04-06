@@ -270,31 +270,18 @@ body {
 }
 .container__portfolio .projects__project__img {
   margin-bottom: 1em;
-  width: 92%;
-  height: 55%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
 .container__portfolio .projects__project__img__screenshot {
   position: relative;
-  transform: scale(0.25);
-  transform-origin: 0 0;
-  width: calc(1440px * 0.25);
-  height: calc(900px * 0.25);
+  width: 100%;
+  height: 100%;
 }
-.container__portfolio .projects__project__img__screenshot:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-.container__portfolio .projects__project__img__screenshot iframe {
-  width: 1440px;
-  height: 900px;
-  display: block;
+.container__portfolio .projects__project__img__screenshot img {
+  width: 100%;
+  height: 100%;
 }
 .container__portfolio .projects__project h4 {
   font-weight: 500;
@@ -546,31 +533,18 @@ body {
   }
   .container__portfolio .projects__project__img {
     margin-bottom: 1em;
-    width: calc(1425px * 0.25);
-    height: calc(975px * 0.25);
+    width: 100%;
     overflow: hidden;
     position: relative;
   }
   .container__portfolio .projects__project__img__screenshot {
     position: relative;
-    transform: scale(0.25);
-    transform-origin: 0 0;
-    width: 1440px;
-    height: 900px;
+    width: 100%;
+    height: 100%;
   }
-  .container__portfolio .projects__project__img__screenshot:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .container__portfolio .projects__project__img__screenshot iframe {
-    width: 1440px;
-    height: 900px;
-    display: block;
+  .container__portfolio .projects__project__img__screenshot img {
+    width: 100%;
+    height: 100%;
   }
   .container__portfolio .projects__project h4 {
     font-weight: 500;
@@ -794,31 +768,18 @@ body {
   }
   .container__portfolio .projects__project__img {
     margin-bottom: 1em;
-    width: calc(1425px * 0.25);
-    height: calc(975px * 0.25);
+    width: 100%;
     overflow: hidden;
     position: relative;
   }
   .container__portfolio .projects__project__img__screenshot {
     position: relative;
-    transform: scale(0.25);
-    transform-origin: 0 0;
-    width: 1440px;
-    height: 900px;
+    width: 100%;
+    height: 100%;
   }
-  .container__portfolio .projects__project__img__screenshot:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .container__portfolio .projects__project__img__screenshot iframe {
-    width: 1440px;
-    height: 900px;
-    display: block;
+  .container__portfolio .projects__project__img__screenshot img {
+    width: 100%;
+    height: 100%;
   }
   .container__portfolio .projects__project h4 {
     font-weight: 500;
@@ -1042,31 +1003,18 @@ body {
   }
   .container__portfolio .projects__project__img {
     margin-bottom: 1em;
-    width: calc(1425px * 0.25);
-    height: calc(975px * 0.25);
+    width: 100%;
     overflow: hidden;
     position: relative;
   }
   .container__portfolio .projects__project__img__screenshot {
     position: relative;
-    transform: scale(0.25);
-    transform-origin: 0 0;
-    width: 1440px;
-    height: 900px;
+    width: 100%;
+    height: 100%;
   }
-  .container__portfolio .projects__project__img__screenshot:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .container__portfolio .projects__project__img__screenshot iframe {
-    width: 1440px;
-    height: 900px;
-    display: block;
+  .container__portfolio .projects__project__img__screenshot img {
+    width: 100%;
+    height: 100%;
   }
   .container__portfolio .projects__project h4 {
     font-weight: 500;
@@ -1290,31 +1238,18 @@ body {
   }
   .container__portfolio .projects__project__img {
     margin-bottom: 1em;
-    width: calc(1425px * 0.25);
-    height: calc(975px * 0.25);
+    width: 100%;
     overflow: hidden;
     position: relative;
   }
   .container__portfolio .projects__project__img__screenshot {
     position: relative;
-    transform: scale(0.25);
-    transform-origin: 0 0;
-    width: 1440px;
-    height: 900px;
+    width: 100%;
+    height: 100%;
   }
-  .container__portfolio .projects__project__img__screenshot:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .container__portfolio .projects__project__img__screenshot iframe {
-    width: 1440px;
-    height: 900px;
-    display: block;
+  .container__portfolio .projects__project__img__screenshot img {
+    width: 100%;
+    height: 100%;
   }
   .container__portfolio .projects__project h4 {
     font-weight: 500;
