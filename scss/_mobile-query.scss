@@ -286,6 +286,7 @@
 @media screen and (min-width: 600px) and (max-width: 767px) {
     .header {
         height: 100vh;
+        padding: 2.5em;
 
         &__nav {
             padding: 1.75em;
@@ -301,7 +302,7 @@
                 text-align: center;
                 width: 25%;
             }
-            
+
             &__nav-bar {
                 width: 50%;
                 display: flex;
@@ -333,9 +334,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 50%;
-            height: 100%;
-            float: left;
+            height: 50%;
+            width: 100%;
             line-height: 2.5em;
         }
 
@@ -343,10 +343,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 50%;
-            height: 100%;
-            float: right;
-            padding: 0 3.25em 0 0;
+            height: 50%;
+            width: 100%;
+            padding: 0;
 
             h3 {
                 font-weight: $medium;

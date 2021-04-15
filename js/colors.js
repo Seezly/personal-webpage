@@ -84,6 +84,12 @@ const colors = () => {
     kofi.style.backgroundColor = blue;
     kofi.style.textDecoration = 'none';
     kofi.setAttribute('rel', 'noopener noreferrer');
+    kofi.addEventListener('mouseover', () => {
+        kofi.style.textDecoration = 'none';
+    });
+    kofi.addEventListener('mouseout', () => {
+        kofi.style.textDecoration = 'none';
+    });
 
     footer.style.backgroundColor = blue;
 
