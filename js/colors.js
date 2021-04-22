@@ -1,5 +1,7 @@
 const colors = () => {
     const header = document.getElementsByClassName('header')[0],
+    navMobile = document.querySelector('.header__nav--sm'),
+    liMobile = document.querySelectorAll('.header__nav--sm li'),
 	nav = document.getElementsByClassName('header__nav')[0],
 	span = document.querySelectorAll('span.yellow'),
 	links = document.querySelectorAll('main a'),
@@ -49,6 +51,17 @@ const colors = () => {
 
     header.style.backgroundColor = blue;
     nav.style.backgroundColor = blue + 'BF';
+    navMobile.style.backgroundColor = red + 'E6';
+
+    liMobile.forEach(el => {
+
+        el.addEventListener('mouseover', () => {
+            el.style.backgroundColor = blue;
+        });
+        el.addEventListener('mouseout', () => {
+            el.style.backgroundColor = 'transparent';
+        });
+    });
 
     links.forEach(el => {
         el.style.color = blue;

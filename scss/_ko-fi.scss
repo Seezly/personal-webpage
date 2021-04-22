@@ -6,7 +6,7 @@
         border-radius: 0.25em !important;
         font-family: 'Poppins', 'Helvetica neue', Helvetica, monospace !important;
         font-weight: $bold !important;
-        font-size: 18px !important;
+        font-size: 1em !important;
         @include transitions(.5s);
 
         &:hover {

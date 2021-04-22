@@ -1,6 +1,88 @@
 .header {
     height: 100vh;
 
+    .menu {
+        font-size: 1.5em;
+        top: 1.75em;
+        left: 1.75em;
+        position: fixed;
+        cursor: pointer;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .active {
+        opacity: 1;
+        visibility: visible;
+        @include transitions(.5s);
+    }
+
+    &__nav--sm {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        left: 0;
+        top: 0;
+        box-shadow: 0.125em 0em 0.25em 25em #000000bf;
+        @include transitions(.5s);
+
+        &__status {
+            text-align: center;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            bottom: 1.75em;
+            @include transitions(.5s);
+        }
+        
+        &__nav-bar {
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0 auto 0 0;
+            opacity: 0;
+            visibility: hidden;
+            @include transitions(.5s);
+
+            li {
+                width: 100%;
+                padding: 1em;
+
+                @include transitions(.5s);
+
+
+                &:hover {
+                    
+                    @include transitions(.5s);
+                }
+
+                a {
+                    color: white;
+                    font-weight: $thin;
+
+                    @include transitions(.5s);
+
+                    &:hover {
+                        font-weight: $semiBold;
+
+                        @include transitions(.5s);
+                    }
+                }
+            }
+        }
+    }
+
     &__nav {
         padding: 1.75em;
         position: fixed;
@@ -18,10 +100,12 @@
         &__nav-bar {
             width: 50%;
             display: flex;
+            text-align: center;
             justify-content: space-between;
             margin: 0 auto 0 0;
 
             li {
+                width: 20%;
 
                 a {
                     color: white;
