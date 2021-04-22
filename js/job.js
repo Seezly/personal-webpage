@@ -1,5 +1,6 @@
 const isAvailable = bool => {
     const status = document.querySelector('span.header__nav__status');
+    const statusMobile = document.querySelector('span.header__nav--sm__status');
     let job;
 
     if(bool === true){
@@ -9,6 +10,7 @@ const isAvailable = bool => {
     }
 
     status.innerHTML = job;
+    statusMobile.innerHTML = job;
 };
 
 export default isAvailable;
