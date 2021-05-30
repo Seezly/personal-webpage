@@ -15,6 +15,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
 
         &__project {
             display: flex;
@@ -24,6 +25,8 @@
             width: 30%;
             height: 28em;
             padding-top: 1.5em;
+            border-radius: 0.5em;
+            margin-bottom: 2em;
 
             &__img {
                 margin-bottom: 1em;
@@ -70,6 +73,19 @@
                     text-decoration: none;
                     @include transitions(.5s);
                 }
+            }
+        }
+
+        &__btn {
+            width: 100%;
+            margin: auto;
+            margin-top: 1.75em;
+
+            .projects__project__btn {
+                margin: auto;
+                display: block;
+                width: 25%;
+                text-align: center;
             }
         }
     }

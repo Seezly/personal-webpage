@@ -6,11 +6,13 @@ const colors = () => {
 	span = document.querySelectorAll('span.yellow'),
 	links = document.querySelectorAll('main a'),
 	buttons = document.querySelectorAll('a.projects__project__btn'),
-	kofi = document.querySelector('.kofi-button'),
+	kofi = document.querySelector('.kofi-button') || undefined,
 	footer = document.getElementsByTagName('footer')[0],
 	footerLinks = document.querySelectorAll('.footer__social a'),
 	copyLink = document.querySelector('.footer__copy h6 a'),
-	sub = document.querySelectorAll('h3.yellow');
+	sub = document.querySelectorAll('h3.yellow'),
+    post = document.querySelectorAll('.container__blog__post'),
+    project = document.querySelectorAll('.container__projects__project');
 
     let blue,
         sun,
@@ -94,16 +96,16 @@ const colors = () => {
         });
     });
 
-    kofi.style.backgroundColor = blue;
-    kofi.style.textDecoration = 'none';
-    kofi.setAttribute('rel', 'noopener noreferrer');
-    kofi.addEventListener('mouseover', () => {
-        kofi.style.textDecoration = 'none';
-    });
-    kofi.addEventListener('mouseout', () => {
-        kofi.style.textDecoration = 'none';
+    post.forEach(el => {
+        el.style.boxShadow = `0.125em 0.125em 0.25em ${blue}80`;
+        el.style.backgroundColor = blue;
     });
 
+    project.forEach(el => {
+        el.style.boxShadow = `0.125em 0.125em 0.25em ${blue}80`;
+        el.style.backgroundColor = blue;
+    });
+    
     footer.style.backgroundColor = blue;
 
     span.forEach(el => el.style.color = sun);
@@ -117,7 +119,7 @@ const colors = () => {
             el.style.color = "#ffffff";
         });
     })
-
+    
     copyLink.style.color = sun;
     copyLink.addEventListener('mouseover', () => {
         copyLink.style.color = green;
@@ -126,6 +128,19 @@ const colors = () => {
     copyLink.addEventListener('mouseout', () => {
         copyLink.style.color = sun;
     });
+    
+    if (kofi) {
+        kofi.style.backgroundColor = blue;
+        kofi.style.textDecoration = 'none';
+        kofi.setAttribute('rel', 'noopener noreferrer');
+        kofi.addEventListener('mouseover', () => {
+            kofi.style.textDecoration = 'none';
+        });
+        kofi.addEventListener('mouseout', () => {
+            kofi.style.textDecoration = 'none';
+        });
+    }
 };
+
 
 export default colors;

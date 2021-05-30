@@ -4,7 +4,15 @@ const isAvailable = bool => {
     let job;
 
     if(bool === true){
-        job = "I'm available to work!";
+        job = `<a href="https://www.sergiogutierrez.ml/assets/SergioG_CV.pdf" target="_blank" rel="noopener noreferrer">I'm available to work!</a>`;
+
+        status.addEventListener('mouseover', () => {
+            job = `<a href="https://www.sergiogutierrez.ml/assets/SergioG_CV.pdf" target="_blank" rel="noopener noreferrer">Download my CV!</a>`;
+        });
+
+        status.addEventListener('mouseout', () => {
+            job = `<a href="https://www.sergiogutierrez.ml/assets/SergioG_CV.pdf" target="_blank" rel="noopener noreferrer">I'm available to work!</a>`;
+        });
     } else {
         job = "I'm currently working!";
     }

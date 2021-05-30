@@ -1,5 +1,5 @@
 .header {
-    height: 100vh;
+    height: auto;
 
     .menu {
         font-size: 1.5em;
@@ -42,6 +42,18 @@
             position: absolute;
             bottom: 1.75em;
             @include transitions(.5s);
+
+            a {
+                color: white;
+
+                @include transitions(.5s);
+
+                &:hover {
+                    font-weight: $bold;
+
+                    @include transitions(.5s);
+                }
+            }
         }
         
         &__nav-bar {
@@ -95,6 +107,18 @@
         &__status {
             text-align: center;
             width: 25%;
+
+            a {
+                color: white;
+
+                @include transitions(.5s);
+
+                &:hover {
+                    font-weight: $bold;
+
+                    @include transitions(.5s);
+                }
+            }
         }
         
         &__nav-bar {
