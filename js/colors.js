@@ -11,8 +11,8 @@ const colors = () => {
 	footerLinks = document.querySelectorAll('.footer__social a'),
 	copyLink = document.querySelector('.footer__copy h6 a'),
 	sub = document.querySelectorAll('h3.yellow'),
-    post = document.querySelectorAll('.container__blog__post'),
-    project = document.querySelectorAll('.container__projects__project');
+    post = document.querySelectorAll('.blog__post'),
+    project = document.querySelectorAll('.projects__project');
 
     let blue,
         sun,
@@ -96,15 +96,19 @@ const colors = () => {
         });
     });
 
-    post.forEach(el => {
-        el.style.boxShadow = `0.125em 0.125em 0.25em ${blue}80`;
-        el.style.backgroundColor = blue;
-    });
+    if (post) {
+        post.forEach(el => {
+            el.style.boxShadow = `0.125em 0.125em 0.25em ${blue}80`;
+            el.style.backgroundColor = blue;
+        });
+    }
 
-    project.forEach(el => {
-        el.style.boxShadow = `0.125em 0.125em 0.25em ${blue}80`;
-        el.style.backgroundColor = blue;
-    });
+    if (project) {
+        project.forEach(el => {
+            el.style.boxShadow = `0.125em 0.125em 0.25em ${blue}80`;
+            el.style.backgroundColor = blue;
+        });
+    }
     
     footer.style.backgroundColor = blue;
 
