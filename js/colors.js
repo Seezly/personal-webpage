@@ -103,7 +103,7 @@ const colors = () => {
         el.style.textDecoration = 'none';
 
         el.addEventListener('mouseover', () => {
-            el.style.backgroundColor = blue;
+            el.style.backgroundColor = green;
             el.style.color = 'white';
             el.style.textDecoration = 'none';
         });
