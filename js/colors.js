@@ -6,13 +6,14 @@ const colors = () => {
 	span = document.querySelectorAll('span.yellow'),
 	links = document.querySelectorAll('main a'),
 	buttons = document.querySelectorAll('a.projects__project__btn'),
+	buttonsPost = document.querySelectorAll('a.posts__post__info__btn'),
 	kofi = document.querySelector('.kofi-button') || undefined,
 	footer = document.getElementsByTagName('footer')[0],
 	footerLinks = document.querySelectorAll('.footer__social a'),
 	copyLink = document.querySelector('.footer__copy h6 a'),
 	sub = document.querySelectorAll('h3.yellow'),
-    post = document.querySelectorAll('.posts__post'),
-    project = document.querySelectorAll('.projects__project');
+    post = document.querySelectorAll('.posts__post') || undefined,
+    project = document.querySelectorAll('.projects__project') || undefined;
 
     let blue,
         sun,
@@ -91,6 +92,23 @@ const colors = () => {
         });
         el.addEventListener('mouseout', () => {
             el.style.backgroundColor = blue;
+            el.style.color = 'white';
+            el.style.textDecoration = 'none';
+        });
+    });
+
+    buttonsPost.forEach(el => {
+        el.style.backgroundColor = red;
+        el.style.color = 'white';
+        el.style.textDecoration = 'none';
+
+        el.addEventListener('mouseover', () => {
+            el.style.backgroundColor = blue;
+            el.style.color = 'white';
+            el.style.textDecoration = 'none';
+        });
+        el.addEventListener('mouseout', () => {
+            el.style.backgroundColor = red;
             el.style.color = 'white';
             el.style.textDecoration = 'none';
         });
