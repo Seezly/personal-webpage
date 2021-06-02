@@ -106,7 +106,6 @@ const colors = () => {
     if (project) {
         project.forEach(el => {
             el.style.boxShadow = `0.125em 0.125em 0.25em ${blue}80`;
-            el.style.backgroundColor = blue;
         });
     }
     
