@@ -11,7 +11,7 @@ const colors = () => {
 	footerLinks = document.querySelectorAll('.footer__social a'),
 	copyLink = document.querySelector('.footer__copy h6 a'),
 	sub = document.querySelectorAll('h3.yellow'),
-    post = document.querySelectorAll('.blog__post'),
+    post = document.querySelectorAll('.posts__post'),
     project = document.querySelectorAll('.projects__project');
 
     let blue,
